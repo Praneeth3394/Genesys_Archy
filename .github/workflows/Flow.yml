@@ -22,7 +22,7 @@ jobs:
 
       FLOWS_DIR: "flows"
 
-      PROD_LOCATION: "usw2.pure.cloud"
+    
  
     steps:
 
@@ -46,7 +46,7 @@ jobs:
 
           echo "CLIENT_SECRET=${{ secrets.PROD_CLIENT_SECRET }}" >> $GITHUB_ENV
 
-          echo "LOCATION=${{ env.PROD_LOCATION }}" >> $GITHUB_ENV
+          echo "LOCATION=${{ secrets.PROD_LOCATION }}" >> $GITHUB_ENV
  
       - name: Publish flows to PROD
 
