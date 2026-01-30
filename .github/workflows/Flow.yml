@@ -20,7 +20,7 @@ jobs:
 
       ARCHY_VERSION: "latest"    # pin to a version if needed
 
-      FLOWS_DIR: "flows"
+      FLOWS_DIR: "Architect_flows"
 
     
  
